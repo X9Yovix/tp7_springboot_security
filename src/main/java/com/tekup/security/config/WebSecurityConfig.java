@@ -26,12 +26,13 @@ public class WebSecurityConfig {
                 authorizeHttpRequests((request) -> request
                         .requestMatchers(WHITE_LIST_URI)
                         .permitAll()
+                        .requestMatchers("/login")
+                        .anonymous()
                         .anyRequest()
                         .authenticated()
                 )
                 .formLogin((form) -> form
                         .loginPage("/login")
-                        .permitAll()
                 )
                 .logout(LogoutConfigurer::permitAll);
 
