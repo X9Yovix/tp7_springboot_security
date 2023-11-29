@@ -11,7 +11,7 @@ Spring Boot Security project
 
   ![Home Page](img/1.png)
 
-- We have a custom login page with two inputs for username and password. While we can use `Customize::defaults()` to get the default login page provided by Spring Boot Security, we opted to create our own.
+- We have a custom login page with two inputs for username and password. While we can use `Customizer.withDefaults()` to get the default login page provided by Spring Boot Security, we opted to create our own.
 
   ![Login Page](img/2.png)
   
